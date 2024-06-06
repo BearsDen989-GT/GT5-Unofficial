@@ -26,29 +26,6 @@ public class CuttingRecipes implements Runnable {
     public void run() {
         // silicon wafer recipes
         {
-            recipeWithClassicFluids(
-                new ItemStack[] { ItemList.Circuit_Silicon_Ingot.get(1) },
-                new ItemStack[] { ItemList.Circuit_Silicon_Wafer.get(16),
-                    GT_OreDictUnificator.get(OrePrefixes.dust, Materials.SiliconSG, 4) },
-                20 * SECONDS,
-                TierEU.RECIPE_LV,
-                false);
-
-            recipeWithClassicFluids(
-                new ItemStack[] { ItemList.Circuit_Silicon_Ingot2.get(1) },
-                new ItemStack[] { ItemList.Circuit_Silicon_Wafer2.get(32),
-                    GT_OreDictUnificator.get(OrePrefixes.dust, Materials.SiliconSG, 8) },
-                40 * SECONDS,
-                TierEU.RECIPE_MV,
-                true);
-
-            recipeWithClassicFluids(
-                new ItemStack[] { ItemList.Circuit_Silicon_Ingot3.get(1) },
-                new ItemStack[] { ItemList.Circuit_Silicon_Wafer3.get(64),
-                    GT_OreDictUnificator.get(OrePrefixes.dust, Materials.SiliconSG, 16) },
-                1 * MINUTES + 20 * SECONDS,
-                TierEU.RECIPE_HV,
-                true);
 
             recipeWithClassicFluids(
                 new ItemStack[] { ItemList.Circuit_Silicon_Ingot4.get(1) },
@@ -67,7 +44,6 @@ public class CuttingRecipes implements Runnable {
                 true);
 
         }
-
         // glass pane recipes
         {
             // stained-glass -> glass pane recipes

@@ -34,6 +34,8 @@ import com.google.common.base.Stopwatch;
 import com.google.common.collect.SetMultimap;
 
 import appeng.api.AEApi;
+import bde.loaders.recipes.BDE_CraftingRecipeLoader;
+import bde.loaders.recipes.BDE_MachineRecipeLoader;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -417,7 +419,8 @@ public class GT_Mod implements IGT_Mod {
         new GT_CropLoader().run();
         new GT_Worldgenloader().run();
         new GT_CoverLoader().run();
-
+        new BDE_CraftingRecipeLoader().run();
+        new BDE_MachineRecipeLoader().run();
         GT_RecipeRegistrator.registerUsagesForMaterials(
             null,
             false,
